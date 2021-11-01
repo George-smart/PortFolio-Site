@@ -1,0 +1,441 @@
+/* ==================General Styling==================== */
+html{
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html > *, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+small{
+    font-size: 1rem;
+    color: rgba(70, 73, 76, 1);
+}
+h1{
+    font-size: 4vw;
+}
+.btn{
+    padding: 10px 30px;
+    background: rgba(229, 56, 59, 1);
+    border-radius: 20px;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: rgba(70, 73, 76, 1);
+}
+/* =========================Main Header Styling=================================== */
+.main-header{
+    width: 100vw;
+    position: relative;
+}
+
+#main-nav{
+    max-width: 100%;
+    background: rgba(70, 73, 76, 1);
+    padding: 30px 20px;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#main-nav ul{
+    margin-top: 20px;
+}
+.menu-bar{
+    display: none;
+}
+.menu-bar li a{
+    display: block;
+    padding: 5px 10px;
+}
+.menu-bar li a:hover{
+    background: #000;
+}
+.main-header label{
+    cursor: pointer;
+    color: #fff;
+    padding: 10px;
+    background: rgba(0,0,0,.4);
+    font-size: 1.5rem;
+}
+.main-header input{
+    opacity: 0;
+}
+.main-header input:checked + .menu-bar{
+    display: block;
+}
+
+/* ===============================Hero Styling====================== */
+.hero{
+    width: 100%;
+    min-height: 600px;
+    background-image: url(img/hero_img.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.hero img{
+    max-width: 100%;
+}
+.hero h1,
+.hero p{
+    color: #fff;
+    z-index: 10;
+}
+.hero h1{
+    font-size: 3rem;
+    margin-bottom: 0;
+
+}
+.hero h1 span{
+    color: rgba(229, 56, 59, 1);
+}
+.hero p{
+    font-size: 1.5rem;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .5;
+}
+
+/* =========================About Me Styling============================ */
+.main-wrapper{
+    max-width: 80vw;
+    margin: 90px auto;
+}
+#about .about-titile{
+    font-size: 4vw;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.image-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+.image-profile img{
+    width: 250px;
+    height: 300px;
+    /* border-radius: 50%;
+    max-width: 100%; */
+}
+#about h6{
+    color: rgba(229, 56, 59, 1);
+    font-size: 1.3rem;
+    margin: 0;
+}
+#about h2{
+    font-size: 1.5rem;
+}
+#about .profile{
+    margin-top: 0;
+}
+#about .description{
+    line-height: 1.9;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+.personal_data{
+    display: flex;
+    flex-wrap: wrap;
+}
+.personal_data > div{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.resume .btn{
+    margin-right: 20px;
+}
+.resume .works{
+    background: #fff;
+    border: 1px solid rgba(70, 73, 76, 1);
+    color: #000;
+}
+#service{
+    max-width: 100vw;
+    background: rgba(224, 225, 221, 1);
+    padding: 80px 0;
+}
+.service-wrapper{
+    max-width: 80vw;
+    margin: auto;
+}
+.service_header{
+    margin-bottom: 50px;
+}
+.service_header h1{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.service-content{
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(200px, auto);
+}
+.service-content > div{
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.service-content img{
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+}
+.service-content h4{
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.service-content p{
+    padding: 0 60px;
+}
+
+/* ======================Hiring Styling=========================== */
+.hire{
+    background: rgba(13, 27, 42, 1);
+    padding: 50px 0;
+}
+.hire-wrapper{
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+   
+    justify-content: space-between;
+    color: #fff;
+}
+.hire_header{
+    /* min-width: 200px;
+    flex-basis: 50%; */
+}
+.hire-wrapper h1{
+    margin: 0;
+}
+.hire-wrapper p{
+    color: rgba(255,255,255,.7);
+    font-size: .9rem;
+    padding: 0 30px 0 0;
+}
+.hire-wrapper .btn{
+    align-self: center;
+}
+
+
+/* ============================Portfolio Styling=============================== */
+.portfolio-header{
+    margin-bottom: 50px;
+}
+.categories{
+    margin-bottom: 20px;
+}
+.categories li{
+    display: inline;
+    margin-right: 20px;
+}
+.portfolio-show{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(300px, auto);
+}
+.portfolio-show img{
+    width: 100%;
+    height: 100%;
+}
+
+/* ==========================Testimonies Styling =================== */
+#testimonies_section{
+    background: rgba(224, 225, 221, 1);
+    padding: 10px 0;
+}
+
+/* #testimonies_section .main-wrapper{
+    
+    
+}    */
+.testimonies_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.testimonies-header h1{
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    line-height: 1.4;
+}
+
+.comment_1,
+.comment_2{
+    flex-basis: 40%;
+    padding: 30px;
+    margin-top: 50px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 5px 4px 0px rgba(224, 225, 221, 1);
+}
+.comment_1 p,
+.comment_2 p{
+    line-height: 1.8;
+    font-size: 0.9rem;
+}
+.slide_comment{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ccc;
+    margin-top: 30px;
+    margin-right: 20px;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+.slide:hover{
+    background: #eee
+}
+
+/* ============================Blog Post Styling ============================ */
+
+.blog_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.blog_wrapper img{
+    max-width: 100%
+}
+
+.post{
+    max-width: 500px;
+    flex-basis: 50%;
+    /* background: #ccc; */
+    margin: 10px ;
+}
+.blog_image{
+    position: relative;
+    max-width: 100%
+}
+.post_time{
+    width: 100px;
+    padding: 10px 5px;
+    background-color: rgb(175, 1, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+}
+.blog_text p{
+    font-size: 0.9rem
+}
+.tag_color{
+    color: rgb(175, 1, 1);
+    font-weight: 600;
+}
+
+/* ========================Contact Styling========================== */
+#contact_section{
+    background: #eee;
+    padding: 2px 0;
+}
+.contact_form p{
+    width: 100%;
+}
+.contact_form input{
+    width: 100%;
+    padding: 10px 5px;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    box-shadow: 5px 3px 0px rgba(224, 225, 221, 1);
+}
+.contact_form textarea{
+    width: 100%;
+    min-height: 100px;
+    outline: none;
+    border: none;
+    padding: 10px 5px;
+    font-size: 1.2rem;
+    box-shadow: 5px 3px 0px rgba(224, 225, 221, 1);
+}
+
+.contact_form .input_name{
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 30px;
+}
+.input_name p{
+    flex-basis: 50%;
+}
+
+#submit{
+    width: 200px;
+    background: rgb(175, 1, 1);
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* =============================  Footer Styling  ============================== */
+#footer_section{
+    background: #000;
+    padding: 2px 0;
+    color: #fff;
+}
+
+.top_footer{
+    display: flex;
+    justify-content: space-evenly; 
+    margin: 50px 0;   
+}
+hr{
+    border: none solid #ccc;
+    outline: none;
+    opacity: .3;
+}
+.buttom_footer{
+    text-align: center;
+}
+.logos{
+    margin-top: 20px;
+}
+.buttom_footer .color{
+    color: rgb(175, 1, 1);
+}
+.buttom_footer img{
+    cursor: pointer;
+    margin-right: 5px;
+}
+.buttom_footer img:hover{
+    filter: grayscale(100%);
+}
+
+
+
+$rich-black-fogra-29: rgba(13, 27, 42, 1);
+$oxford-blue: rgba(27, 38, 59, 1);
+$bdazzled-blue: rgba(65, 90, 119, 1);
+$shadow-blue: rgba(119, 141, 169, 1);
+$platinum: rgba(224, 225, 221, 1);
